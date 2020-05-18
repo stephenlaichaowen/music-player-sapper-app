@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+  <meta name='theme-color' content='#333333'>
+
+  %sapper.base%
+
+  <link rel='manifest' href='manifest.json' crossorigin='use-credentials'>
+  <link rel='icon' type='image/png' href='logo-192.png'>
+  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+
+  %sapper.styles%
+  <style>
+    body {
+      background: #dfe7ef;
+      font-family: "Bitter", serif;
+      overflow: hidden;
+    }
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+
+  %sapper.head%
+</head>
+
+<body>
+
+  <div id='sapper'>%sapper.html%</div>
+  
+  %sapper.scripts%
+
+</body>
+
+</html>
+
